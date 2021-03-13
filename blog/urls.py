@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from django.views.generic import TemplateView
+# from django.views.generic import TemplateView
+from .views import BlogView
 
 urlpatterns = [
-    path('/blog', TemplateView.as_view(), name='blog'),
+    path('blog', BlogView.as_view(template_name='blog/blog.html'), name='blog'),
 ]

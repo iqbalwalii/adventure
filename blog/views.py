@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 
-class blogview(TemplateView):
+class BlogView(TemplateView):
     template_name='blog.html'

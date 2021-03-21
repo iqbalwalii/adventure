@@ -1,5 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "terminal.integrated.automationShell.osx": "",
+    "python.pythonPath": "C:\\Users\\batman\\envs\\deathstar\\Scripts\\python.exe"
 }

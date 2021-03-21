@@ -1,0 +1,80 @@
+.container
+  width: 100vw
+  padding-top: 1rem
+  backdrop-filter: blur(20px)
+  /* main css  */
+body
+  background: url(../images/bg.jpg) no-repeat center center
+  background-attachment: fixed
+  background-size:cover
+  width: 100vw
+  overflow-x: hidden
+.headings
+  font-size: 5rem
+  color: #010f06
+  text-align: center
+.container__inside
+  width: 94vw
+  margin: auto
+  margin-top: 1rem
+  background: rgba(255, 255, 255, 0.200)
+  border-radius: 20px
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 98%
+  & h2
+    font-size: 2rem
+    margin-top: .8rem
+.navbar > .logo > img
+  margin-left: .6rem
+  width: 60px
+.logo
+  display: flex
+  align-items: center
+  color: #0f0f0f
+.nav_links > a
+  text-decoration: none
+  font-size: 2rem
+  margin-right: 1rem
+  color: #0f0c0c
+.navbar .nav_links > a 
+  display: inline-block
+  margin-right: 1.6rem
+  font-size: 1.4rem
+  color: #292323
+  -webkit-transition: all .3s linear
+  transition: all .3s linear
+  position: relative
+  padding-bottom: .1rem
+.navbar .nav_links > a::after 
+  content: ""
+  display: inline-block
+  width: 0%
+  height: 2px
+  background: linear-gradient(to right, #010f06, #03b2f7)
+  position: absolute
+  bottom: 0
+  left: -10%
+  -webkit-transition: all .3s linear
+  transition: all .3s linear
+.navbar .nav_links > a:hover::after 
+  width: 120%
+.hero
+  display: flex
+  justify-content: space-around
+  & .hero_heading
+    color: #0f0f0f
+    font-size: 2rem
+    align-self: center
+    margin-left: 2.5rem
+    text-transform: uppercase
+    & .hero_image 
+      & img
+      border-top-right-radius: 15%
+.centered_text
+  text-align: center
+  color: #000
+  padding: 1rem
+  text-transform: uppercase

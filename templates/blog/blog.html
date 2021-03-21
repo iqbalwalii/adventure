@@ -1,1 +1,13 @@
-{% include 'partials/_navbar.html' %}
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        {% include 'partials/_navbar.html' %}
+        <h2 class='centered_text'>Recent Posts</h2>
+        {% if Posts %}
+            {% for post in Posts %}
+                <li>{{post.title}}</li>
+            {% endfor %}
+        {% endif %}
+
+
+{% endblock content %}

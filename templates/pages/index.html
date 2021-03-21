@@ -1,121 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="container">
-	<div class="c-header c-header--archive c-header--project-list">
-		<div class="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
-			<ul class="c-mouse-vertical-carousel__list js-carousel-list">
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="0">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        01
-                    </span> Nevada
-						</p>
+        {% include 'partials/_navbar.html' %}
+        <div class="hero">
+            <div class="hero_heading">
+                <h1>The Mountains are Calling</h1>
+            </div>
+            <div class="hero_image">
+                <img src="{% static 'images/hero.png' %}" alt="">
+            </div>
+        </div>
+        <section class='expeditions'>
+            <h2 class='headings'>Expeditions</h2>
+        </section>
+        {% include 'partials/_carousel.html' %}
 
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Carson City
-						</p>
-					</a>
-				</li>
-
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="1">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        02
-                    </span> New Hampshire
-						</p>
-
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Concord
-						</p>
-					</a>
-				</li>
-
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="2">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        03
-                    </span> Kashmir
-						</p>
-
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Pir Panjal
-						</p>
-					</a>
-				</li>
-
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="3">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        04
-                    </span> Oklahoma
-						</p>
-
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Oklahoma City
-						</p>
-					</a>
-				</li>
-
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="4">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        05
-                    </span> North Carolina
-						</p>
-
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Raleigh
-						</p>
-					</a>
-				</li>
-				
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="5">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        06
-                    </span> Utah
-						</p>
-
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Salt Lake City
-						</p>
-					</a>
-				</li>
-				
-				<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="6">
-					<a href="">
-						<p class="c-mouse-vertical-carousel__eyebrow u-b4">
-							<span>
-                        07
-                    </span> Missouri
-						</p>
-
-						<p class="c-mouse-vertical-carousel__title u-a5">
-							Jefferson City
-						</p>
-					</a>
-				</li>
-			</ul>
-		
-			
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/uploads/141148589884100082977/a816dbd7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')"></i>
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/photo-1511715885542-a3713331633d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')"></i>
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')"></i>
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80')"></i>
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/photo-1521115715763-2fcaa0608e9b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80')"></i>
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/photo-1525885270172-2b7c27278d8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></i>
-			<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://images.unsplash.com/photo-1524384121198-81e94dec2d08?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')"></i>
-			<i class="c-gradient-overlay"></i>
-
-		
-	</div>
-</div>
 {% endblock content %}
 

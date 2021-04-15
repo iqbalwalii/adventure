@@ -1,19 +1,11 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, View
 
 # Create your views here.
 from django.views.generic import TemplateView
-from .models import Posts
-
-class BlogView(TemplateView):
+from .models import Post
+class PostView(ListView):
     template_name='blog.html'
-    context_object_name='web_posts'
-    model=Posts
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
-    
-
-# class PostView(ListView):
-#     template_name='blog.html'
-    
+    model = Post
+    def get(self, request):
+        return render(request, self.template_name, {'posts': Post.objects.all()})

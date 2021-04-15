@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="POST">
+{% csrf_token %}
+<fieldset>
+<legend>Register</legend>
+{{ form.as_p }}
+
+</fieldset>
+</form>
+{% endblock content %}
+
+
+
+

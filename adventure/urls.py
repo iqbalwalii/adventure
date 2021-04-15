@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name="pages/index.html")),
     path("", include('blog.urls')),
+    path("", include('Users.urls')),
     path('__debug__/', include(debug_toolbar.urls)),
 
 

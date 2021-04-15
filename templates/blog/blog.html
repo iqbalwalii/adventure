@@ -4,6 +4,7 @@
 {% include 'partials/_navbar.html' %}
 <h2 class="centered_text">Recent Posts</h2>
     {% for post in posts %}
+    
        <h2>{{ post.title }}</h2>
     {% endfor %} 
 {% endblock content %}
